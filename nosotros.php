@@ -4,11 +4,22 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="img/icons/cerdoIcon.png">
 
   <title>La Granjita</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsivecss" />
+  <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/font.css">
+  <style>
+
+@media (max-width: 1290px) {
+
+  .P {
+        width: 92%;
+    }
+
+}
+  </style>
 </head>
 
 <body>
@@ -89,9 +100,7 @@
           <div class="titulos">Gordon Ramsay</div>
           <img src="https://i.ibb.co/R2MCVpN/cuatro.jpg" class="porf" />
           <div class="fantasma">
-            Gordon James Ramsay (Johnstone, Escocia; 8 de noviembre de 1966)
-            es un chef, dueño de restaurantes y presentador de televisión
-            británico. En toda su carrera gastronómica ha sido condecorado con
+            Gordon James Ramsay en toda su carrera gastronómica ha sido condecorado con
             17 estrellas Michelin, de las que hoy mantiene siete.Además
             de sus facetas culinarias, Ramsay es conocido por presentar
             programas de televisión y espacios de telerrealidad sobre cocina.

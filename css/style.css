@@ -4,31 +4,30 @@ body{
     margin: 0 auto; 
     min-height: 100vh;
     background-color:#f5f5f5;
-    padding-top: 86px;
 }
 /*---------MENU---------------------------------------------*/
 .boxmenu{
     position: fixed;
     background-color: #FFFFFF;
     width: 1280px;
-    height: 80px;
+    height: 60px;
     top: 0;
     z-index: 1000;
     border-bottom: solid 7px #F2CA52;
 }
 .menus{
     display: inline-block;
-    height: 80px;
+    height: 60px;
     width: 250px;
     background-color: #FF8A33;
     color:white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: palo ;
     font-size: 20px;
     transition: .3s;
 }
 .menus:hover{
     display: inline-block;
-    height: 80px;
+    height: 70px;
     width: 250px;
     background-color: #d47831;
     color:black;
@@ -84,16 +83,17 @@ button{ /*Resetea css de <button>*/
 }
 .abrirModal{
     position: absolute;
-    background-color: #58B837;
+    background-color: #FF8A33;
     width: 150px;
-    height: 30px;
-    bottom: 2px;
-    right: 10px;
+    height: 55px;
+    top: 2px;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 22px;
     color: #eeeeee;
+    border:50px;
   }
   .abrirModal:hover{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -130,7 +130,7 @@ button{ /*Resetea css de <button>*/
 }
 /*------------FOOTER------------------------------------*/
 footer{
-    height:600px;
+    height:575px;
     bottom:0;
     width:1280px;
     background-color: #030303;
@@ -151,6 +151,7 @@ footer{
 }
 #content {
     padding-bottom: 30px;
+    padding-top: 72px;
 }
 .formasPago{
   display: flex;
@@ -368,29 +369,29 @@ footer{
     color: #FFFFFF;
 }
 .botonn{
+    display: flex;
     background-color: #FFFFFF;
-    width: 100px;
+    width: auto;
     height: 40px;
     align-items: center;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
-    color: #FF8A33;
+    color: white;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     border-radius: 5px;
-    border: 1px solid #FF8A33;
+    background-color: #0070BA;
+    border: 1px solid #0070BA;
     transition: .3s;
+    margin: 0 auto;
 }
 .botonn:hover{
     transition: .3s;
     background-color: #FF8A33;
     color: #FFFFFF;
 }
-/*---------------------------------PANEL---------------------------------------*/
-.pastel{
-    { border-collapse: collapse; margin: 25px 0; font-size: 1em; font-family: sans-serif; min-width: 450px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); }
-}
+
 /*----------------------------<table></table>----------------------------------*/
                     .tftable {
                         table-layout: fixed;

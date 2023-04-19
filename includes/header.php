@@ -20,8 +20,6 @@
 
     <button class="menus dere"></button>
 
-    <button class="abrirCP" onclick="window.location.href='cpanel.php'">CPanel</button>
-
   </div>
   
 </header>

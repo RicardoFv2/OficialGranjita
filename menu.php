@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="img/icons/cerdoIcon.png">
 
   <title>La Granjita</title>
   <link rel="stylesheet" href="css/style.css" />
@@ -68,18 +69,19 @@
   <div id="wrapper">
     <div id="content">
       <div class="container">
-      <button class="abrirModal" id="abrirModal">Iniciar sesion</button>
 
         <?php
         session_start();
         if (empty($_SESSION["correo"])) { ?>
+
+          <div class="box G"><div style="display:flex;justify-content:center;"><button style="width:100%;" class="abrirModal" id="abrirModal">Hacer mi pedido</button></div></div>
 
           <div id="ventanaModal" class="modal">
             <div class="contenido-modal">
               <span class="cerrar">&times;</span>
               <h2>Login</h2>
               <form action="login/login.php" method="post">
-                <h3 class="title">Loguarse</h3>
+                <h3 class="title">Log</h3>
                 <input type="email" name="correo" placeholder="enter your email" class="box3" required>
                 <input type="password" name="palabra_secreta" placeholder="enter your password" class="box3" required>
                 <input type="submit" value="Iniciar Ahora" class="form-btn" name="submit">
@@ -116,9 +118,41 @@
           </script>
 
 
+
+<?php
+        include('conn.php');
+        $query = mysqli_query($conn, "select * from `user`");
+        while ($row = mysqli_fetch_array($query)) {
+        ?>
+
+          <div class="box P">
+
+            <img src="<?php echo $row['foto']; ?>" class="porf">
+            <div class="fantasma" style="top:0px;left:0px"><?php echo $row['descripcion']; ?></div>
+
+            <div class="frijol" style="z-index:10;">
+
+              <form method="POST" action="add.php">
+
+                <div class="arroz"><input type="hidden" name="descripcion" value="<?php echo $row['nombre']; ?>"><?php echo $row['nombre']; ?></div>
+
+
+                <!--<button class="botonbuy"></button>-->
+
+              </form>
+            </div>
+          </div>
+
+        <?php
+        }
+        ?>
+
+
         <?php } else {  ?>
-           <div class="box G"><br>Sé que tu correo es: <strong><?php echo $_SESSION['correo']; ?></strong><a href="login/logout.php">Cerrar sesión</a></div>
-           <div class="box L">
+           
+           <div class="box G">
+
+           <br><strong style="margin: 0 auto;"><?php echo $_SESSION['correo']; ?></strong><a style="margin: 0 auto;" href="login/logout.php">Cerrar sesión</a><br>
 
 <table class="tftable">
   <thead>
@@ -151,9 +185,9 @@
 </table>
 
 <form method="POST" action="fact.php">
-  <input type="text" name="id_cliente" value="9">
+  <input type="hidden" name="id_cliente" value="9">
   <input type="hidden" name="monto" value="<?php echo number_format($suma, 2); ?>">
-  <input type="submit" value="Continuar con el Pago">
+  <div style="display:flex;justify-content:center;"><input type="submit" value="Continuar con el Pago" class="botonn"></div>
 </form>
 </div>
 <?php
@@ -167,7 +201,7 @@
             <img src="<?php echo $row['foto']; ?>" class="porf">
             <div class="fantasma" style="top:0px;left:0px"><?php echo $row['descripcion']; ?></div>
 
-            <div class="frijol" style="z-index:100;">
+            <div class="frijol" style="z-index:1000;">
 
               <form method="POST" action="add.php">
 
@@ -189,14 +223,14 @@
 
            <?php } ?>
 
-        
-
-        
 
       </div>
     </div>
   </div>
 
+    <!-- FOOTER CON PHP -->
+    <?php include 'includes/footer.php' ?>
+  <!-- FOOTER CON PHP -->
 
 </body>
 

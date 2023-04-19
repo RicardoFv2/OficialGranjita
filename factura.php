@@ -7,7 +7,7 @@
 
   <title>La Granjita</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsivecss" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <style>
 
@@ -96,7 +96,7 @@
             <form>
 			<input type="hidden" name="id_cliente" value="">
             <input type="hidden" name="monto" value="<?php echo number_format($suma,2); ?>">
-            Total a pagar: $<?php echo number_format($suma,2); ?><br>
+            <div style="display:flex;justify-content:center;">Total a pagar: $<?php echo number_format($suma,2); ?></div>
 			
 	        </form>
               
@@ -124,8 +124,8 @@
     <input type="hidden" name="return" value="http://localhost/Granja/receptor.php">
     <input type="hidden" name="cancel_return" value="http://localhost/Granja/pago_cancelado.php">
 
-    <button type="submit" class="botonn">Pagar ahora con Paypal!</button>
-
+    <div style="display:flex;justify-content:center;"><button  type="submit" class="botonn">Pagar ahora con Paypal!</button></div>
+    <br>
 </form>
               
           </div>

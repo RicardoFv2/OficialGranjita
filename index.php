@@ -24,17 +24,28 @@ if (isset($_POST['submit'])) {
   <link rel="icon" type="image/x-icon" href="img/icons/cerdoIcon.png">
   <title>La Granjita</title>
   <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/login.css" />
   <link rel="stylesheet" href="css/font.css">
 </head>
 
 <body>
 
-          <!-- HEADER CON PHP -->
+<style>
+
+@media (max-width: 1290px) {
+
+  .fantasma {
+        visibility: hidden;
+    }
+
+}
+  </style>
+
+  <!-- HEADER CON PHP -->
   <?php include 'includes/header.php' ?>
-          <!-- HEADER CON PHP -->
-          
+  <!-- HEADER CON PHP -->
+
   <div id="wrapper">
     <div id="content">
       <div class="slider" style="max-width: 1280px">
@@ -61,14 +72,14 @@ if (isset($_POST['submit'])) {
           <div class="titulos">Prueba Nuestras Nuevas Promociones</div>
           <img src="https://i.ibb.co/BCFVTqs/jugoso-filete-cerdo-parrilla-hueso.jpg" class="porf" />
           <div class="fantasma" style="top:0px;left:0px;">
-            Disfruta nuetros nuevos platos exquisitos y ahora con nuevas
-            salsas y bebidas
+            Aprovecha de nuestras nuevas promociones, promociones solo por un tiempo limitado gracias a nuestra
+            reapertura
           </div>
         </div>
         <div class="box P">
           <div class="titulos">Nuevos Platos</div>
           <img src="https://i.ibb.co/f884mvx/49857.jpg" class="porf" />
-          <div class="fantasma"style="top:0px;left:0px;">
+          <div class="fantasma" style="top:0px;left:0px;">
             Disfruta nuetros nuevos platos exquisitos y ahora con nuevas
             salsas y bebidas
           </div>
@@ -76,37 +87,37 @@ if (isset($_POST['submit'])) {
         <div class="box P">
           <div class="titulos">Productos Importados</div>
           <img src="https://i.ibb.co/9ww0pbr/22623330-asado-de-cerdo-en-un-plato-marr-n.webp" class="porf" />
-          <div class="fantasma"style="top:0px;left:0px;">
-            Disfruta nuetros nuevos platos exquisitos y ahora con nuevas
-            salsas y bebidas
+          <div class="fantasma" style="top:0px;left:0px;">
+            Productos nuevos recien importados de nuestros países vecinos
           </div>
         </div>
         <div class="box P">
           <div class="titulos">Platillos Refinados</div>
           <img src="https://i.ibb.co/GtvZC4s/Filete-cubierto-de-oro-shutterstock-2131621529.webp" class="porf" />
           <div class="fantasma" style="top:0px;left:0px;">
-            Disfruta nuetros nuevos platos exquisitos y ahora con nuevas
-            salsas y bebidas
+            Platillos finos para nuestro público más exigente y de gustos refinados
           </div>
         </div>
         <div class="box P">
           <div class="titulos">Bebidas Frías y Licores</div>
           <img class="porf" src="https://enlacocina.b-cdn.net/wp-content/uploads/2018/07/bebidas-refrescantes.jpg" />
-          <div class="fantasma"style="top:0px;left:0px;">
-            Disfruta nuetros nuevos platos exquisitos y ahora con nuevas
-            salsas y bebidas
+          <div class="fantasma" style="top:0px;left:0px;">
+            Prueba nuestro menu de bebidas frías, calientes y una amplia variedad de licores
           </div>
         </div>
 
         <div class="box P">
           <div class="titulos">Postres</div>
-          <div class="fantasma"style="top:0px;left:0px;">Prueba nuestros deliciosos postres con ingredientes 100% naturales y bajo en azúcar
+          <div class="fantasma" style="top:0px;left:0px;">Prueba nuestros deliciosos postres con ingredientes 100%
+            naturales y bajo en azúcar
           </div>
+
           <img class="porf" src="img/maxresdefault.jpg" alt="Postres">
         </div>
         <div class="box P">
           <div class="titulos">Eventos</div>
-          <div class="fantasma"style="top:0px;left:0px;">Disfruta un ambiente familiar en nuestro salón de eventos con la participación de
+          <div class="fantasma" style="top:0px;left:0px;">Disfruta un ambiente familiar en nuestro salón de eventos con
+            la participación de
             artistas nacionales</div>
           <img class="porf" src="img/maxresdefault (1).jpg" alt="Postres">
         </div>
@@ -115,20 +126,19 @@ if (isset($_POST['submit'])) {
         <div class="box P">
           <div class="titulos">Zona de Juegos</div>
           <img class="porf" src="https://i.ibb.co/PT4Cy0g/zona-juegos-jkl470m6mq.jpg" />
-          <div class="fantasma"style="top:0px;left:0px;">
-            Disfruta nuetros nuevos platos exquisitos y ahora con nuevas
-            salsas y bebidas
+          <div class="fantasma" style="top:0px;left:0px;">
+            Disfruta de la nueva zona de juegos en nuestra nueva sucursal
           </div>
         </div>
       </div>
     </div>
   </div>
 
-        <!-- FOOTER CON PHP -->
+  <!-- FOOTER CON PHP -->
   <?php include 'includes/footer.php' ?>
-        <!-- FOOTER CON PHP -->
-        
-  
+  <!-- FOOTER CON PHP -->
+
+
   <script>
     var modal = document.getElementById("ventanaModal");
 

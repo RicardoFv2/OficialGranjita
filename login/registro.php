@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <title>Registro</title>
+    <link rel="icon" type="image/x-icon" href="../img/icons/cerdoIcon.png">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
 
 </head>
 
@@ -34,33 +40,36 @@
 
             <button class="menus dere"></button>
 
-            <button class="abrirCP" onclick="window.location.href='../cpanel.php'">CPanel</button>
-
         </div>
 
     </header>
     <br>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 
     <div class="wrapper">
+        <div class="content">
+<br><br><br>
+            <form class="form-control" action="registrar.php" method="post" style="background-color:#FF8A33;">
 
-        <form class="form-control" action="registrar.php" method="post" style="background-color:#FF8A33;">
+                <input class="form-control" required name="correo" type="email" placeholder="Tu correo electrónico">
+                <br>
+                <input class="form-control" required name="palabra_secreta" type="password" placeholder="Contraseña">
+                <br>
+                <input class="form-control" required name="palabra_secreta_confirmar" type="password"
+                    placeholder="Confirma tu contraseña">
+                <br>
+                <!--Lo siguiente envía el formulario-->
+                <input class="form-control btn btn-dark btn btn-primary btn-lg" type="submit" value="Registrarme">
+                <br>
+                <br>
+                <a class="link-dark" href="../menu.php">Ya tengo una cuenta</a>
 
-            <input class="form-control" required name="correo" type="email" placeholder="Tu correo electrónico">
+            </form>
             <br>
-            <input class="form-control" required name="palabra_secreta" type="password" placeholder="Contraseña">
-            <br>
-            <input class="form-control" required name="palabra_secreta_confirmar" type="password" placeholder="Confirma tu contraseña">
-            <br>
-            <!--Lo siguiente envía el formulario-->
-            <input class="form-control btn btn-dark btn btn-primary btn-lg" type="submit" value="Registrarme">
-            <br>
-            <br>
-            <a class="link-dark" href="../menu.php">Ya tengo una cuenta</a>
-
-        </form>
-        <br>
+        </div>
     </div>
     <footer>
         Ordenar a través de nuestro call center al (503) 2121-2222
